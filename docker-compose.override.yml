@@ -1,0 +1,10 @@
+version: '3.11'
+
+
+services:
+  app:
+    volumes:
+      - ./files_input:/wd/minitasks/files:ro
+      - ./files_output:/wd/files_output:rw
+      - ./logs:/wd/logs:rw
+    user: "1000"

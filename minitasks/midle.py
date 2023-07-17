@@ -3,9 +3,14 @@ import requests
 
 
 def get_csv(url="https://drive.google.com/uc?export=download&id=13nk_FYpcayUck2Ctrela5Tjt9JQbjznt"):
+    """
+    :param: url: URL of file with data "https://drive.google.com/uc?export=download&id=13nk_FYpcayUck2Ctrela5Tjt9JQbjznt"
+    :return: midle_weigth, midle_heigth: midle weigth and heigth of people in list
+    """
+
     weigth = []
     heigth = []
-    save_path = "new_file.csv"
+    save_path = "wd/files_output/new_file.csv"
     response = requests.get(url)
 
     with open(save_path, "wb") as file:

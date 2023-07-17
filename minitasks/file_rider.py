@@ -1,6 +1,6 @@
 def reader(filename: str) -> str:
     """
-    :param filename: name of your file
+    :param: filename: name of your file
     :return: contents of your file
     """
     with open(filename) as file_object:

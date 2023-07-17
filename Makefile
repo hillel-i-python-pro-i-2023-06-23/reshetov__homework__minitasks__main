@@ -36,8 +36,7 @@ d-purge:
 # Init environment for development
 init-dev:
 	@pip install --upgrade pip && \
-	pip install --requirement requirements.txt && \
-	pre-commit install
+	pip install --requirement requirements.txt
 
 .PHONY: homework-i-run
 # Run homework

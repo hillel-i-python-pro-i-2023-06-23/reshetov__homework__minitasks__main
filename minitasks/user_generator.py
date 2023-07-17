@@ -4,6 +4,10 @@ fake = Faker()
 
 
 def generator(number_of_users: int = 100) -> str:
+    """
+    :param: number of users(100 by default)
+    :return: names and emails of random generated users
+    """
     list_of_users = []
     for _ in range(number_of_users):
         name = fake.first_name()

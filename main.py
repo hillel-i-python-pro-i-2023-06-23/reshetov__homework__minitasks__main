@@ -5,13 +5,13 @@ from minitasks.who_is_here import number_of_astronauts
 
 
 def main():
-    print(f'\nNow function "get_csv" is using:\n')
+    print('\nNow function "get_csv" is using:\n')
     get_csv()
-    print(f'\nNow function "reader" is using:\n')
+    print('\nNow function "reader" is using:\n')
     reader("wd/files_input/message.txt")
-    print(f'\nNow function "genarator" is using:\n')
+    print('\nNow function "genarator" is using:\n')
     generator()
-    print(f'\nNow function " number_of_astronauts" is using:\n')
+    print('\nNow function " number_of_astronauts" is using:\n')
     number_of_astronauts()
 
 

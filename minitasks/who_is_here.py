@@ -24,5 +24,5 @@ def number_of_astronauts() -> int:
     url = "http://api.open-notify.org/astros.json"
     url_response = asyncio.run(get_response(url))
     astronauts = url_response["number"]
-    print(f'{astronauts} astronauts at this moment.')
+    print(f"{astronauts} astronauts at this moment.")
     return astronauts
